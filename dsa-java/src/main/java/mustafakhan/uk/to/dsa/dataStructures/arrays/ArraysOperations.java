@@ -1,11 +1,11 @@
 package mustafakhan.uk.to.dsa.dataStructures.arrays;
 
-public class AraysOperations {
+public class ArraysOperations {
     private int[] array;
     private int size;
 
     // constructor to initialize the array and size
-    public ArrayOperations(int capacity) {
+    public ArraysOperations(int capacity) {
         array = new int[capacity];
         size = 0;
     }
