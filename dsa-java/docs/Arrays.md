@@ -6,6 +6,10 @@ In programming, arrays are commonly used to store collections of elements.
 
 Two important concepts related to arrays are length and size. This document also explains these concepts and their usage in different contexts, with a focus on Java.
 
+`length`: This is a property of the array object, used to determine the total number of elements the array can hold.
+
+
+
 ### Length Property
 
 #### Definition
@@ -24,6 +28,9 @@ The `length` property of an array provides the total number of elements that the
     ```
 
     In this example, the `length` property of the `fruits` array is accessed using `fruits.length`, which returns the number of elements in the array.
+
+### Size Property: 
+ `size`: Arrays do not have a size() method.
 
 ### Size vs. Length
 
