@@ -30,12 +30,12 @@ public class ArraysOperations {
     /**
      * get element from an index 
      * @param index
-     * @return int
+     * @return Integer
      */  
-    public int getElement(int index) {
+    public Integer getElement(int index) {
         if (index > array.length-1 || index < 0) {
             System.err.println("out of index");
-            return -1; // indicates an error
+            return null; // indicates an error
         }
         return array[index];
 
