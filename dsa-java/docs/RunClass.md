@@ -44,3 +44,17 @@ $ java directory_of_the_class_file.the_class_file_name_without_the_extension
 $ java mustafakhan.uk.to.App 
 Hello World!
 ```
+
+## With an imported Package
+
+```
+$ javac -d . App.java dsa/dataStructures/arrays/ArraysOperations.java
+```
+***This command compiles both ArraysOperations.java and App.java and places the compiled .class files in the correct directory structure under the current directory (-d .).***
+
+### Alternative Approach
+- If you prefer to compile all Java files in one go, you can use a wildcard to compile everything.
+
+```
+$ javac -d . **/*.java
+```
