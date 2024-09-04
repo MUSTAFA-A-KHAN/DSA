@@ -4,13 +4,20 @@ public class ArraysOperations {
     private int[] array;
     private int size;
 
-    // constructor to initialize the array and size
+    /**
+     * constructor to initialize the array and size
+     * @param capacity
+     */
     public ArraysOperations(int capacity) {
         array = new int[capacity];
         size = 0;
     }
 
-    // adds the element at the end
+    /**
+     * adds the element at the end
+     * @param e
+     * @return nil
+     */
     public void addElement(int e) {
         if (size < array.length) {
             array[size] = e;
@@ -20,7 +27,11 @@ public class ArraysOperations {
         }
     }
 
-    // get element from an index
+    /**
+     * get element from an index 
+     * @param index
+     * @return int
+     */  
     public int getElement(int index) {
         if (index > array.length-1 || index < 0) {
             System.err.println("out of index");
@@ -30,8 +41,13 @@ public class ArraysOperations {
 
     }
 
-    // Update element at an index
-    public void updateElement(int index, int e) {
+   /**
+    * adds the element at the end
+    * @param index
+    * @param e
+    * @return nil
+    */
+    public void updateElement(int index, int e) { // Update element at an index
         if (index > size || index < 0) {
             System.err.println("out of index");
         }
@@ -39,7 +55,11 @@ public class ArraysOperations {
         System.out.println("Updation Completed at index:" + index);
     }
 
-    // Remove element from an index
+    /**
+     * Remove element from an index 
+     * @param index
+     * @return nil
+     */
     public void deleteElement(int index) {
         if (index > size || index < 0) {
             System.err.println("out of index");
@@ -52,7 +72,10 @@ public class ArraysOperations {
         System.out.println("Element removed successfully.");
     }
 
-    // Get the current size of the array
+    /**
+     * Get the current size of the array
+     * @return int
+     */
     public int getSize() {
         return size;
     }
