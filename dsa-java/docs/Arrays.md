@@ -83,3 +83,11 @@ In Java, the term "size" is generally used in the context of collections, such a
 
     In this example, the `size()` method of the `ArrayList` class is used to get the number of elements in the list, demonstrating the distinction between `size` and `length`.
 
+### Advantages:
+- Java arrays enable you to access any element randomly with the help of indexes
+- It is easy to store and manipulate large data sets.
+
+### Disadvantages :
+- The size of the array cannot be increased or decreased once it is declared—arrays have a fixed size
+- Java cannot store heterogeneous (`differing in kind`) data. It can only store a single type of primitives.
+
