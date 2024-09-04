@@ -22,7 +22,7 @@ public class ArraysOperations {
 
     // get element from an index
     public int getElement(int index) {
-        if (index > array.length || index < 0) {
+        if (index > array.length-1 || index < 0) {
             System.err.println("out of index");
             return -1; // indicates an error
         }
