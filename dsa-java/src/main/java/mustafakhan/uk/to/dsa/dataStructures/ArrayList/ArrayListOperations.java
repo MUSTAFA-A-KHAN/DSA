@@ -18,25 +18,32 @@ public class ArrayListOperations {
         arrayList.add(element);
     }
 
-    public Integer GetElement(int index){
-       if(index<0 || index>arrayList.size()){
-        return null;
-       }else{
-        return arrayList.get(index);
-       }
+    public Integer GetElement(int index) {
+        if (index < 0 || index > arrayList.size()) {
+            return null;
+        } else {
+            return arrayList.get(index);
+        }
     }
 
-    public ArrayList<Integer> GetAll(){
+    public ArrayList<Integer> GetAll() {
         return arrayList;
     }
 
-    public void  DeleteElement(int index){
-        if(index<0 || index>arrayList.size()){
+    public void DeleteElement(int index) {
+        if (index < 0 || index > arrayList.size()) {
             System.err.println("invalid index");
-           }else{
+        } else {
             arrayList.remove(index);
-           }
-       
-    } 
+        }
+
+    }
+
+    public void UpdateElement(int index, int value) {
+        arrayList.set(index, value);
+    }
+    public Integer GetSize(){
+        return arrayList.size();
+    }
 
 }
