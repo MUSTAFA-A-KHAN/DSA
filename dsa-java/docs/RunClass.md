@@ -58,3 +58,7 @@ $ javac -d . App.java dsa/dataStructures/arrays/ArraysOperations.java
 ```
 $ javac -d . **/*.java
 ```
+OR
+```
+$ find . -name "*.java" | xargs javac -d .
+```
