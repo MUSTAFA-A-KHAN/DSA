@@ -45,5 +45,8 @@ public class ArrayListOperations {
     public Integer GetSize(){
         return arrayList.size();
     }
-
+    
+    public void PrintAll(){
+        System.out.println(arrayList);
+    }
 }
