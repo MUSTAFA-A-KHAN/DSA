@@ -1,5 +1,7 @@
 package mustafakhan.uk.to.dsa.dataStructures.arrays;
 
+import java.util.Arrays;
+
 public class ArraysOperations {
     private int[] array;
     private int size;
@@ -78,6 +80,14 @@ public class ArraysOperations {
      */
     public int getSize() {
         return size;
+    }
+
+    /**
+     * Get all the elements
+     * @return array
+     */
+    public void printAll(){
+        System.out.println(Arrays.toString(array));
     }
 
 }
