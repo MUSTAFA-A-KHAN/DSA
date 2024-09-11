@@ -19,6 +19,9 @@ public class ArraysUtilities {
                 break;
             case 5:
                 return arraysOperations.getSize();
+            case 6:
+                 arraysOperations.printAll();
+                 break;
             // break;
         }
         return null;
@@ -37,6 +40,7 @@ public class ArraysUtilities {
             System.out.println("3. Delete Element");
             System.out.println("4. Add Element");
             System.out.println("5. Get Size");
+            System.out.println("6. Get All the elements");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
