@@ -21,6 +21,8 @@ public class ArrayListUtilities {
                 break;
             case 5:
                 return arrayListOperations.GetSize();
+            case 6:
+                arrayListOperations.PrintAll();
             // break;
         }
         return null;
@@ -38,6 +40,7 @@ public class ArrayListUtilities {
             System.out.println("3. Delete Element");
             System.out.println("4. Add Element");
             System.out.println("5. Get Size");
+            System.out.println("6. Get All the elements");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
