@@ -1,40 +1,40 @@
-package mustafakhan.uk.to.dsa.dataStructures.arrays;
+package mustafakhan.uk.to.dsa.dataStructures.ArrayList;
 
 import java.util.Scanner;
 
-public class ArraysUtilities {
-    public Integer DoOPerations(int choice, int index, int element, ArraysOperations arraysOperations) {
+public class ArrayListUtilities {
+
+
+    public Integer DoOPerations(int choice, int index, int element, ArrayListOperations arrayListOperations) {
         switch (choice) {
             case 1:
-                return arraysOperations.getElement(index);
+                return arrayListOperations.GetElement(index);
             // break;
             case 2:
-                arraysOperations.updateElement(index, element);
+            arrayListOperations.UpdateElement(index, element);
                 break;
             case 3:
-                arraysOperations.deleteElement(index);
+            arrayListOperations.DeleteElement(index);
                 break;
             case 4:
-                arraysOperations.addElement(element);
+            arrayListOperations.AddElement(element);
                 break;
             case 5:
-                return arraysOperations.getSize();
+                return arrayListOperations.GetSize();
             case 6:
-                 arraysOperations.printAll();
-                 break;
+                arrayListOperations.PrintAll();
             // break;
         }
         return null;
     }
-
-    public void ArraysUtils() {
+    public void ArrayListUtils() {
         Scanner scanner = new Scanner(System.in);
         int length = scanner.nextInt();
-        ArraysOperations arraysOperations = new ArraysOperations(length);
+        ArrayListOperations arraysOperations = new ArrayListOperations(length);
 
         int choice = -1, index = -1, element = -1;
         do {
-            System.out.println("\nArray Operations Menu:");
+            System.out.println("\nArrayList Operations Menu:");
             System.out.println("1. Get Element");
             System.out.println("2. Update Element");
             System.out.println("3. Delete Element");
@@ -55,8 +55,8 @@ public class ArraysUtilities {
                 System.out.println("Enter element:");
                 element = scanner.nextInt();
             }
-           
-           Integer result = DoOPerations(choice, index, element, arraysOperations);
+
+            Integer result = DoOPerations(choice, index, element, arraysOperations);
             if (result != null) {
                 if (choice == 1) {
                     System.out.println("Element at index " + index + ": " + result);
@@ -67,6 +67,6 @@ public class ArraysUtilities {
         } while (choice != 0);
 
         scanner.close();
-    }
 
+    }
 }
