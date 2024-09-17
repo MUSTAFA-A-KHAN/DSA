@@ -1,6 +1,7 @@
 package mustafakhan.uk.to.dsa.dataStructures.arrays;
 
 import java.util.Arrays;
+import mustafakhan.uk.to.dsa.algorithms.sort.insertion.InsertionSort;
 
 public class ArraysOperations {
     private int[] array;
@@ -88,6 +89,15 @@ public class ArraysOperations {
      */
     public void printAll(){
         System.out.println(Arrays.toString(array));
+    }
+
+    /**
+     * sort the Array
+     * @return void
+     */
+    public void sort(){
+        InsertionSort sort= new InsertionSort();
+        array=sort.sort(array);
     }
 
 }

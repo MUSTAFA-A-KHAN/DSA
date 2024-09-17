@@ -22,11 +22,13 @@ public class ArraysUtilities {
             case 6:
                  arraysOperations.printAll();
                  break;
+            case 7: 
+                 arraysOperations.sort();
             // break;
         }
         return null;
     }
-
+    
     public void ArraysUtils() {
         Scanner scanner = new Scanner(System.in);
         int length = scanner.nextInt();
@@ -41,6 +43,7 @@ public class ArraysUtilities {
             System.out.println("4. Add Element");
             System.out.println("5. Get Size");
             System.out.println("6. Get All the elements");
+            System.out.println("7. Sort the Array");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
