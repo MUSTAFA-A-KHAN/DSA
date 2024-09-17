@@ -62,3 +62,14 @@ OR
 ```
 $ find . -name "*.java" | xargs javac -d .
 ```
+
+## Alternative way to compile the code and generate jar
+***.jar***-JAVA archive
+### Generate jar
+```
+mvn clean install
+```
+***NOTE-*** run the command where `pom.xml` is present.
+
+- you can find the the compiled classes inside `target/classes` folder.
+- the jar will be located inside the `taget` folder.
