@@ -2,6 +2,7 @@ package mustafakhan.uk.to.dsa.dataStructures.arrays;
 
 import java.util.Arrays;
 import mustafakhan.uk.to.dsa.algorithms.sort.insertion.InsertionSort;
+import mustafakhan.uk.to.dsa.algorithms.sort.selection.SelectionSort;
 
 public class ArraysOperations {
     private int[] array;
@@ -97,6 +98,15 @@ public class ArraysOperations {
      */
     public void sort(){
         InsertionSort sort= new InsertionSort();
+        array=sort.sort(array);
+    }
+
+    /**
+     * sort the Array using SelectionSort
+     *@return void
+     */
+    public void selectionSort(){
+        SelectionSort sort =new SelectionSort();
         array=sort.sort(array);
     }
 

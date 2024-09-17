@@ -24,7 +24,10 @@ public class ArraysUtilities {
                  break;
             case 7: 
                  arraysOperations.sort();
-            // break;
+                 break;
+            case 8: 
+                 arraysOperations.selectionSort();
+                 break;
         }
         return null;
     }
@@ -44,6 +47,7 @@ public class ArraysUtilities {
             System.out.println("5. Get Size");
             System.out.println("6. Get All the elements");
             System.out.println("7. Sort the Array");
+            System.out.println("8. Sort the Array using Selection Sort");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
