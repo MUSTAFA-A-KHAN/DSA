@@ -1,6 +1,11 @@
 package mustafakhan.uk.to.dsa.algorithms.sort.insertion;
 
 public class InsertionSort {
+    /**
+     * sorts the array
+     * @param array
+     * @return array
+     */
     public int[] sort(int [] array){
         for(int i=0;i<array.length;i++){
             int j=i;
