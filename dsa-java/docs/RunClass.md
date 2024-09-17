@@ -72,4 +72,4 @@ mvn clean install
 ***NOTE-*** run the command where `pom.xml` is present.
 
 - you can find the the compiled classes inside `target/classes` folder.
-- the jar will be located inside the `taget` folder.
+- the jar will be located inside the `target` folder.
