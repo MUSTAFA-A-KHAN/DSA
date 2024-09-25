@@ -20,6 +20,8 @@ public class App {
         
             default:
                 break;
+            case 3:
+                new RandomArray().pradeepArray();
         }
         
        
